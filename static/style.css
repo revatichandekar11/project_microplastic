@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;  /* Light background color */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #ffffff;  /* White background for content */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    background-color: #4CAF50;  /* Green background for header */
+    color: white;
+    padding: 10px 0;
+    border-radius: 10px;
+}
+
+h1, h2 {
+    color: #333;  /* Dark gray color for headings */
+}
+
+form {
+    margin: 20px 0;
+}
+
+input[type="file"] {
+    padding: 10px;
+}
+
+button {
+    background-color: #4CAF50;  /* Button color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;  /* Darker green on hover */
+}
+
+.images {
+    margin: 20px 0;
+}
+
+.image {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #4CAF50;  /* Green border around images */
+    border-radius: 10px;
+}
+
+.class-info {
+    text-align: left;
+    margin: 20px 0;
+}
+
+.class-info ul {
+    list-style-type: none;  /* Remove default list style */
+    padding: 0;
+}
+
+.class-info li {
+    background-color: #e7f3fe;  /* Light blue background for class info */
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.back-button {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #4CAF50;  /* Button color */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.back-button:hover {
+    background-color: #45a049;  /* Darker green on hover */
+}

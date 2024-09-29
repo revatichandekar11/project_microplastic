@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microplastic Detection</title>
+    <link rel="stylesheet" href="static/style.css">  <!-- Link to external CSS -->
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Microplastic Detection System</h1>
+            <p>Upload an image to detect microplastics and learn more about them!</p>
+        </header>
+        <form action="{{ url_for('upload_image') }}" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" accept="image/*" required>
+            <button type="submit">Upload</button>
+        </form>
+    </div>
+</body>
+</html>
+

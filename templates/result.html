@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detection Result</title>
+    <link rel="stylesheet" href="static/style.css">  <!-- Link to external CSS -->
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Detection Result</h1>
+            <p>Here's what we found!</p>
+        </header>
+        <div class="images">
+            <h2>Original Image</h2>
+            <img src="{{ original }}" alt="Original Image" class="image">
+            <h2>Result Image</h2>
+            <img src="{{ result }}" alt="Processed Image" class="image">
+        </div>
+        <div class="class-info">
+            <h2>Classifications</h2>
+            <ul>
+                {% for class_id in class_ids %}
+                    <li>Class: {{ class_id }} - <span>{{ class_info[class_id] }}</span></li>
+                {% endfor %}
+            </ul>
+        </div>
+        <a href="{{ url_for('home') }}" class="back-button">Upload Another Image</a>
+    </div>
+</body>
+</html>
+
