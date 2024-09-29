@@ -84,4 +84,4 @@ def upload_image():
                                class_ids=detected_classes, class_info=class_info)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=int(os.environ.get('PORT', 5000)))
